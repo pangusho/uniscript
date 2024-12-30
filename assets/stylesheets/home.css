@@ -1,0 +1,47 @@
+/*HOME*/
+
+.parent {
+	margin-left: 180px;
+	margin-right: 180px;
+}
+
+.textarea-home {
+	width: 60%;
+}
+
+.center {
+	text-align: center;
+}
+
+.dropdown-label {
+	margin-top: 5px;
+}
+
+#textarea-output {
+	margin: 0px auto;
+	border: 1px solid black;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 1px;
+}
+
+#save_button {
+	margin-bottom: 50px;
+}
+
+.dropdown-cara {
+	width: 100%;
+}
+
+.doc-image {
+	height: 56px;
+}
+
+.doc-text {
+	height: 32px;
+}
+
+.footnote-number {
+	vertical-align: top;
+	padding-right: 8px;
+}
