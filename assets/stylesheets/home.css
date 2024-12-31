@@ -27,6 +27,10 @@
 	width: 80%;
 }
 
+#key-input {
+	font-family: monospace;
+}
+
 .center {
 	text-align: center;
 }
