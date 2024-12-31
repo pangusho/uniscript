@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	  <title>Uniscript Keyboard</title>
-	  <link rel="icon" type="image/x-icon" href="./assets/images/uniscript-favicon.ico">
-	  <link rel="stylesheet" href="./assets/stylesheets/bootstrap.css">
-	  <link rel="stylesheet" href="./assets/stylesheets/home.css">
-	  <script src="./assets/javascripts/jquery-3.7.1.min.js"></script>
-	  <script src="./assets/javascripts/application.js"></script>
-	</head>
-	<body class='body'>
-	    <div class='title'>
-			<h1 class='center'>Uniscript Keyboard</h1>
-			<div class='center'><img class="doc-image" src="assets/images/uniscript keyboard.png"></div>
+
+<head>
+	<title>Uniscript Keyboard</title>
+	<link rel="icon" type="image/x-icon" href="./assets/images/uniscript-favicon.ico">
+	<link rel="stylesheet" href="./assets/stylesheets/bootstrap.css">
+	<link rel="stylesheet" href="./assets/stylesheets/home.css">
+	<script src="./assets/javascripts/jquery-3.7.1.min.js"></script>
+	<script src="./assets/javascripts/application.js"></script>
+</head>
+
+<body class='body'>
+	<div class='title'>
+		<h1 class='center'>Uniscript Keyboard</h1>
+		<div class='center'><img class="doc-image" src="assets/images/uniscript keyboard.png"></div>
+		<ul class="nav nav-pills title-nav">
+			<li class="active"><a href="#">Keyboard</a></li>
+			<li><a href="./documentation.html" class="title-nav-pill">Charts</a></li>
+		</ul>
+	</div>
+
+	<div class='parent'>
+		<br />
+		<legend>
+			Keyboard Input
+		</legend>
+		<div class='center'>
+			<textarea class='textarea-home' id='input' rows="5"></textarea>
 		</div>
+		<legend>
+			Uniscript Output
+		</legend>
+	</div>
 
-		<div class='parent' >
-			<br/>
-
-			<legend>
-				Keyboard Input (<a href="./documentation.html" target="_blank">Documentation</a>)
-			</legend>
-			
-			<div class='center'>
-				<textarea class='textarea-home' id='input' rows="5"></textarea>
-			</div>
-			
-			<legend>
-				Uniscript Output
-			</legend>
-
-		</div>
-
-		<div class='parent'>
-
-			<div id='options'>
-
-				<div class='row'>
+	<div class='parent'>
+		<div id='options'>
+			<div class='row dropdown-bar'>
+				<div class="dropdown-container">
 					<div class='span1 offset1 dropdown-label'>
 						Size:
 					</div>
@@ -56,6 +57,8 @@
 							<option>72</option>
 						</select>
 					</div>
+				</div>
+				<div class="dropdown-container">
 					<div class='span1 offset1 dropdown-label'>
 						Weight:
 					</div>
@@ -70,6 +73,8 @@
 							<option>7</option>
 						</select>
 					</div>
+				</div>
+				<div class="dropdown-container">
 					<div class='span1 offset1 dropdown-label'>
 						Color:
 					</div>
@@ -91,11 +96,13 @@
 					</div>
 				</div>
 			</div>
-			
-			<div class='center'>
-				<canvas id="textarea-output" width=300 height=300></canvas><br>
-				<a target='_blank' id='save_button' class='btn btn-primary'>Save Image</a>
-			</div>
 		</div>
-	</body>
+
+		<div class='center'>
+			<canvas id="textarea-output" width=300 height=300></canvas><br>
+			<a target='_blank' id='save_button' class='btn btn-primary'>Save Image</a>
+		</div>
+	</div>
+</body>
+
 </html>

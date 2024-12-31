@@ -5,6 +5,17 @@
 	color: white;
 	padding-top: 12px;
 	padding-bottom: 16px;
+	position: relative;
+}
+
+.title-nav {
+	position: absolute;
+	right: 8px;
+	top: 8px;
+}
+
+.title-nav-pill:not(:hover) {
+	color: white;
 }
 
 .parent {
@@ -13,11 +24,22 @@
 }
 
 .textarea-home {
-	width: 60%;
+	width: 80%;
 }
 
 .center {
 	text-align: center;
+}
+
+.dropdown-bar {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.dropdown-container {
+	display:flex;
+	flex-direction: row;
+	width: 320px;
 }
 
 .dropdown-label {
@@ -51,4 +73,30 @@
 .footnote-number {
 	vertical-align: top;
 	padding-right: 8px;
+}
+
+.keyboard {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.keyboard-btn {
+	padding: 0px;
+	position: relative;
+}
+
+.keyboard-img {
+	height: 40px;
+}
+
+.keyboard-label {
+	position: absolute;
+	bottom: 0px;
+	left: 2px;
+	color: maroon;
+}
+
+.keyboard-row {
+	margin-bottom: 8px;
 }
