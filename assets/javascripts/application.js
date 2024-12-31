@@ -453,7 +453,7 @@ $(document).ready(function () {
 			} else {
 				ax += kern(prevCh, ch) * ar;
 				prevCh = ch;
-				if (ax > get_canvas_width() - (getWidth(ch) + getExtraWidth(ch) + margin) * ar) { // line break
+				if (ax > get_canvas_width() - (getWidth(ch) + getExtraWidth(ch) + margin - 0.5) * ar) { // line break
 					if (wordStartPos > orig_x) { // break whole word
 						breakLocations.push(wordStartIdx);
 						i = wordStartIdx - 1;

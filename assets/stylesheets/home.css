@@ -1,8 +1,15 @@
 /*HOME*/
 
+.title {
+	background-color: navy;
+	color: white;
+	padding-top: 12px;
+	padding-bottom: 16px;
+}
+
 .parent {
-	margin-left: 180px;
-	margin-right: 180px;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 .textarea-home {
