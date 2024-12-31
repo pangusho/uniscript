@@ -88,13 +88,15 @@
 
 .keyboard-img {
 	height: 40px;
+	padding-right: 8px;
 }
 
 .keyboard-label {
 	position: absolute;
 	bottom: 0px;
-	left: 2px;
-	color: maroon;
+	right: 2px;
+	color: blue;
+	font-family: monospace;
 }
 
 .keyboard-row {

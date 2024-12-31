@@ -659,25 +659,25 @@ $(document).ready(function () {
 	$("#font-size").change(function () {
 		font_size = parseInt($(this).val());
 		font_width_abs = get_font_width_abs(font_width, font_size);;
-		var input_text = convert_text($(".textarea-home#input").val());
+		var input_text = convert_text($("#key-input").val());
 		parse_adjust(input_text, min_height);
 	});
 
 	$("#font-width").change(function () {
 		font_width = parseInt($(this).val());
 		font_width_abs = get_font_width_abs(font_width, font_size);;
-		var input_text = convert_text($(".textarea-home#input").val());
+		var input_text = convert_text($("#key-input").val());
 		parse_adjust(input_text, min_height);
 	});
 
 	$("#font-color").change(function () {
 		font_color = $(this).val();
-		var input_text = convert_text($(".textarea-home#input").val());
+		var input_text = convert_text($("#key-input").val());
 		parse_adjust(input_text, min_height);
 	});
 
 	// Textarea input listens to keypress events.
-	$(".textarea-home#input").keyup(function () {
+	$("#key-input").keyup(function () {
 		var input_text = convert_text($(this).val());
 		parse_adjust(input_text, min_height);
 	});
@@ -705,14 +705,27 @@ $(document).ready(function () {
 		}
 	});
 
+	$(".keyboard-btn").click(function () {
+		var old_text = $("#key-input").val();
+		var old_start = $("#key-input").prop('selectionStart');
+		var old_end = $("#key-input").prop('selectionEnd');
+		var c = $(this).data('value');
+		var new_text = old_text.slice(0, old_start) + c + old_text.slice(old_end);
+		$("#key-input").val(new_text);
+		parse_adjust(new_text);
+		$("#key-input").focus();
+		$("#key-input").prop('selectionStart', old_start + 1);
+		$("#key-input").prop('selectionEnd', old_start + 1);
+	});
+
 	$(window).resize(function () {
 		min_width = $(window).width() * width_ratio;
 		set_canvas_width(min_width);
-		var input_text = convert_text($(".textarea-home#input").val());
+		var input_text = convert_text($("#key-input").val());
 		parse_adjust(input_text);
 	});
 
-	var input_text = convert_text($(".textarea-home#input").val());
+	var input_text = convert_text($("#key-input").val());
 	parse_adjust(input_text);
 
 });
