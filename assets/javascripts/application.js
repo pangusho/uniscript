@@ -552,54 +552,6 @@ $(document).ready(function () {
 			return 0;
 	}
 
-	//Sample texts
-	var tr = "butun insAnlAr hur , hAysiyat va hAklAr bAkImIndAn aSit dOGArlAr . AkIl va vijdAnA sAhiptirlar va birbirlarina kArSI kArdaSlik zihniyati ila hArakat atmalidirlar .";
-	var id = "sEmUa qOrax dilahirkan mErdeka dan mEmpuNai martabat dan hak-hak yax sama . mEreka dikarUniai qakal dan hati nUrani dan hEndakNa bErgaUl satU sama lain dalam sEmaxat pErsawdaraan .";
-	var en = "Ol hyUwmIn biyixz Ar bOrn friy and iykwIl in digniti and rayts . Dey Ar endawd wiD riyzIn and kAnSIns and SUd akt tIwOrdz wEn InEDIr in ey spirit Ev brEDIrhUd ."
-	var zh = "ZE2nZE2n SE1x E2Z DI4qiU2 , Da4i DU1nqia2n KE2 Tua2nli4 Sa4x qi2lu4 pi2xdE3x . ta1mEn fU4qiU3 li3si4x KE2 lia2xsi1n , bi4x qi1x qi3 siU1xdi4 gUa1nsi4 de Di1xSE2n KU4sia1x dUi4da4i .";
-	var ru = "vse ludi rOZdAutsa svObOdnImi i rAvnImi v svOem dOstOinstve i prAvAK . Oni nAdelenI rAzUmom i sOvestyu i dOlZnI pOstUpAty v OtnOSenii drUg drUgA v dUKe brAtstva .";
-	var es = "tOdOs lOs seres UmAnOs nATen libres e igUAles en dignidAd i derecOs i , dOtAdOs kOmO estA1n de rATO1n i kOnTienTiA , deben kOmpOrtArse frAternAlmente lOs UnOs kOn lOs OtrOs .";
-	var el = "O1li a1nTrOpi GeniU1nte ele1vTeri ke i1si stin aksiOpre1pia ke ta DikeO1mata . i1ne prikisme1ni me lOGiki1 ke sini1Disi , ke Ofi1lUn na simperife1rOnte metaksi1 tUs me pne1vma aDelfOsi1nis .";
-	var sw = "wAtU wOte wAmezAliwA hUrU , hADi nA hAki zAO ni sAwA . wOte wAmejAliwA Akili nA DAmiri , hivyO yApAsA wAtendeAne kindUgU .";
-	var nv = "bilAqASdAqii tqA1A1 qArTOh yini1kqehgO bidiZci4h dO1O1 qAKeertqeegO qi1li14i14gO bee bAAKO1ci4q . qei1i1 KA1ni1q dO1O1 KA1ni1TKAkees KwiihdAAsyAq qei1i1 binAhji14q qAKidini1rnA1hgO qA1li1leekqehgO kqe1 bee qAKir niid4i14 .";
-	var hi = "sAbqi2 mAnUs1yOx kO gO3rAw O3r ADqikA2rOx ke mA2mAle mex jAnmAjA2T swATAnTrATA2 O3r sAmA2nATA2 prA2pT he3 . Unhex bUDDqi O3r AnTArA2TmA2 ki2 den prA2pT he3 O3r pArAspAr Unhex bqA2i2cA2re ke bqA2w se bArTA2w kArAnA2 cA2hie .";
-	var ko = "mOdIn ingAnIn taEnAl ddabUtE DAyUlOUmyE gI DOnEmgwA gwEnlie issE dOxdIxhAdA . ingAnIn TEnbUDEgIlO isExgwA yAxsimIl bUyEbAdAssImyE sElO hyExDeawi DExsinIlO haxdOxhAyEyA hAndA .";
-	var ja = "sIbete nO nixgex wa , Imarenagara ni site ziyII de ari , katI , sOxgex tO kexri tO ni tIite byOIdOI de arI . nixgex wa , risei tO ryOIsix tO O sazIkerarete Ori , tagai ni dOIhOI nO seisix O mOtte kOIdOI sinakereba naranai .";
-	var ar = "yU2ladU jami2G3U anna2si qaK1ra2ran mUtasa2wi2na fi2 alcara2mati walK1UkU2k . wakad wUhibU2 G3aklan wad3ami2ran waG3alayhim qan yUG3a2mila baG3d3UhUm baG3d3an birU2K1i alqiKa2q .";
-	var hu = "minden emberi le2N sAbAdOn suletik e2S eGenlo2 me2ltO2SA2gA e2S yOgA vAn . Az emberek , e2ssel e2S lelkiiSmerettel bi2rvA2n , eGmA2SSAl semben teStve2ri sellemben kell hOG viSelteSSenek .";
-	var fr = "tU lez e3tr ume4 ne3s libr e egO A4 diNite e A4 drUa . il sO4 dUe dE re3zO4 e dE kO4siA4s e dUavt aZir lez o4 A4ve3r lez Otr dA4z o4n e3spri dE frate3rnite .";
-	var de = "AlE menSEn zind frAi Und glAiK An vurdE Und reKtEn gEbO2rEn . zi2 zind mit fErnUnft Und gEvisEn bEgA2bt Und zOlEn AinAndEr im gAist de2r bru2dErliKkAit bEge2gnEn .";
-	var fa = "tamAme afrAde baSar AzAd be dOnyA miAyand va az lehAze heysiyat va hOGUG bA ham barAbarand , hame dArAye aGl va vejdAn mibASand va bAyad nesbat be yekdigar bA rUhe barAdari raftAr kOnand .";
-	var th = "rAw TU1g kOn gEE3D mAA yAA3x qi3DsA3rA3 , rAw TU1g kOn mii kwAAm ki1D la1 kwAAm kA4w jAy ben koo2x rAw qeex , rAw TU1g kOn kUUAn zAA4y rA1b gAAn bA3Ti3vA3D nAy TAAx ziiAw gan .";
-	var cy = "genir pAUb En SED AK En gEdrAD A2qi gilED meUn IrDAs A hAUliAI . veqI kEnEsgAeDir A2 SesUm A KEdUEbOd , A dElAi pAUb EmDUEn E nAir At E rAr meUn EsbrEd kEmOdlOn .";
-
-	var all = "pbfvmtdTDszncjSZNkgKGxqhlryw , aeiuoAEIUO .";
-
-	var convert_text = function (text) {
-		//sample texts
-		if (text == '***') text = all;
-		else if (text == '*tr*') text = tr;
-		else if (text == '*id*') text = id;
-		else if (text == '*en*') text = en;
-		else if (text == '*zh*') text = zh;
-		else if (text == '*ru*') text = ru;
-		else if (text == '*es*') text = es;
-		else if (text == '*el*') text = el;
-		else if (text == '*sw*') text = sw;
-		else if (text == '*nv*') text = nv;
-		else if (text == '*hi*') text = hi;
-		else if (text == '*ko*') text = ko;
-		else if (text == '*ja*') text = ja;
-		else if (text == '*ar*') text = ar;
-		else if (text == '*hu*') text = hu;
-		else if (text == '*fr*') text = fr;
-		else if (text == '*de*') text = de;
-		else if (text == '*fa*') text = fa;
-		else if (text == '*th*') text = th;
-		else if (text == '*cy*') text = cy;
-		return text;
-	}
-
 	var text_height = 0;
 	var text_width = 0;
 	var num_lines = 0;
@@ -659,26 +611,26 @@ $(document).ready(function () {
 	$("#font-size").change(function () {
 		font_size = parseInt($(this).val());
 		font_width_abs = get_font_width_abs(font_width, font_size);;
-		var input_text = convert_text($("#key-input").val());
+		var input_text = $("#key-input").val();
 		parse_adjust(input_text, min_height);
 	});
 
 	$("#font-width").change(function () {
 		font_width = parseInt($(this).val());
 		font_width_abs = get_font_width_abs(font_width, font_size);;
-		var input_text = convert_text($("#key-input").val());
+		var input_text = $("#key-input").val();
 		parse_adjust(input_text, min_height);
 	});
 
 	$("#font-color").change(function () {
 		font_color = $(this).val();
-		var input_text = convert_text($("#key-input").val());
+		var input_text = $("#key-input").val();
 		parse_adjust(input_text, min_height);
 	});
 
 	// Textarea input listens to keypress events.
 	$("#key-input").keyup(function () {
-		var input_text = convert_text($(this).val());
+		var input_text = $(this).val();
 		parse_adjust(input_text, min_height);
 	});
 
@@ -717,15 +669,44 @@ $(document).ready(function () {
 		$("#key-input").prop('selectionStart', old_start + 1);
 		$("#key-input").prop('selectionEnd', old_start + 1);
 	});
+	
+	const SAMPLE_TEXTS = {
+		tr : "butun insAnlAr hur , hAysiyat va hAklAr bAkImIndAn aSit dOGArlAr . AkIl va vijdAnA sAhiptirlar va birbirlarina kArSI kArdaSlik zihniyati ila hArakat atmalidirlar .",
+		id: "sEmUa qOrax dilahirkan mErdeka dan mEmpuNai martabat dan hak-hak yax sama . mEreka dikarUniai qakal dan hati nUrani dan hEndakNa bErgaUl satU sama lain dalam sEmaxat pErsawdaraan .",
+		en: "Ol hyUwmIn biyixz Ar bOrn friy and iykwIl in digniti and rayts . Dey Ar endawd wiD riyzIn and kAnSIns and SUd akt tIwOrdz wEn InEDIr in ey spirit Ev brEDIrhUd .",
+		zh: "ZE2nZE2n SE1x E2Z DI4qiU2 , Da4i DU1nqia2n KE2 Tua2nli4 Sa4x qi2lu4 pi2xdE3x . ta1mEn fU4qiU3 li3si4x KE2 lia2xsi1n , bi4x qi1x qi3 siU1xdi4 gUa1nsi4 de Di1xSE2n KU4sia1x dUi4da4i .",
+		ru: "vse ludi rOZdAutsa svObOdnImi i rAvnImi v svOem dOstOinstve i prAvAK . Oni nAdelenI rAzUmom i sOvestyu i dOlZnI pOstUpAty v OtnOSenii drUg drUgA v dUKe brAtstva .",
+		es: "tOdOs lOs seres UmAnOs nATen libres e igUAles en dignidAd i derecOs i , dOtAdOs kOmO estA1n de rATO1n i kOnTienTiA , deben kOmpOrtArse frAternAlmente lOs UnOs kOn lOs OtrOs .",
+		el: "O1li a1nTrOpi GeniU1nte ele1vTeri ke i1si stin aksiOpre1pia ke ta DikeO1mata . i1ne prikisme1ni me lOGiki1 ke sini1Disi , ke Ofi1lUn na simperife1rOnte metaksi1 tUs me pne1vma aDelfOsi1nis .",
+		sw: "wAtU wOte wAmezAliwA hUrU , hADi nA hAki zAO ni sAwA . wOte wAmejAliwA Akili nA DAmiri , hivyO yApAsA wAtendeAne kindUgU .",
+		nv: "bilAqASdAqii tqA1A1 qArTOh yini1kqehgO bidiZci4h dO1O1 qAKeertqeegO qi1li14i14gO bee bAAKO1ci4q . qei1i1 KA1ni1q dO1O1 KA1ni1TKAkees KwiihdAAsyAq qei1i1 binAhji14q qAKidini1rnA1hgO qA1li1leekqehgO kqe1 bee qAKir niid4i14 .",
+		hi: "sAbqi2 mAnUs1yOx kO gO3rAw O3r ADqikA2rOx ke mA2mAle mex jAnmAjA2T swATAnTrATA2 O3r sAmA2nATA2 prA2pT he3 . Unhex bUDDqi O3r AnTArA2TmA2 ki2 den prA2pT he3 O3r pArAspAr Unhex bqA2i2cA2re ke bqA2w se bArTA2w kArAnA2 cA2hie .",
+		ko: "mOdIn ingAnIn taEnAl ddabUtE DAyUlOUmyE gI DOnEmgwA gwEnlie issE dOxdIxhAdA . ingAnIn TEnbUDEgIlO isExgwA yAxsimIl bUyEbAdAssImyE sElO hyExDeawi DExsinIlO haxdOxhAyEyA hAndA .",
+		ja: "sIbete nO nixgex wa , Imarenagara ni site ziyII de ari , katI , sOxgex tO kexri tO ni tIite byOIdOI de arI . nixgex wa , risei tO ryOIsix tO O sazIkerarete Ori , tagai ni dOIhOI nO seisix O mOtte kOIdOI sinakereba naranai .",
+		ar: "yU2ladU jami2G3U anna2si qaK1ra2ran mUtasa2wi2na fi2 alcara2mati walK1UkU2k . wakad wUhibU2 G3aklan wad3ami2ran waG3alayhim qan yUG3a2mila baG3d3UhUm baG3d3an birU2K1i alqiKa2q .",
+		hu: "minden emberi le2N sAbAdOn suletik e2S eGenlo2 me2ltO2SA2gA e2S yOgA vAn . Az emberek , e2ssel e2S lelkiiSmerettel bi2rvA2n , eGmA2SSAl semben teStve2ri sellemben kell hOG viSelteSSenek .",
+		fr: "tU lez e3tr ume4 ne3s libr e egO A4 diNite e A4 drUa . il sO4 dUe dE re3zO4 e dE kO4siA4s e dUavt aZir lez o4 A4ve3r lez Otr dA4z o4n e3spri dE frate3rnite .",
+		de: "AlE menSEn zind frAi Und glAiK An vurdE Und reKtEn gEbO2rEn . zi2 zind mit fErnUnft Und gEvisEn bEgA2bt Und zOlEn AinAndEr im gAist de2r bru2dErliKkAit bEge2gnEn .",
+		fa: "tamAme afrAde baSar AzAd be dOnyA miAyand va az lehAze heysiyat va hOGUG bA ham barAbarand , hame dArAye aGl va vejdAn mibASand va bAyad nesbat be yekdigar bA rUhe barAdari raftAr kOnand .",
+		th: "rAw TU1g kOn gEE3D mAA yAA3x qi3DsA3rA3 , rAw TU1g kOn mii kwAAm ki1D la1 kwAAm kA4w jAy ben koo2x rAw qeex , rAw TU1g kOn kUUAn zAA4y rA1b gAAn bA3Ti3vA3D nAy TAAx ziiAw gan .",
+		cy: "genir pAUb En SED AK En gEdrAD A2qi gilED meUn IrDAs A hAUliAI . veqI kEnEsgAeDir A2 SesUm A KEdUEbOd , A dElAi pAUb EmDUEn E nAir At E rAr meUn EsbrEd kEmOdlOn .",
+		pl: "vSIsTI lUDie rODO4 sie4 vOlni i rO2vni v svOyey gOdnOs1Ti i pravaK . sO4 Obdar1eni rOzUmem i sUmieniem i pOvinni pOste4pOvaT1 vObeT siebie v dUKU braterstva .",
+	}
+	
+	$(".language-btn").click(function () {
+		var language = $(this).data('language');
+		var sample_text = SAMPLE_TEXTS[language];
+		$("#key-input").val(sample_text);
+		parse_adjust(sample_text);
+	});
 
 	$(window).resize(function () {
 		min_width = $(window).width() * width_ratio;
 		set_canvas_width(min_width);
-		var input_text = convert_text($("#key-input").val());
+		var input_text = $("#key-input").val();
 		parse_adjust(input_text);
 	});
 
-	var input_text = convert_text($("#key-input").val());
+	var input_text = $("#key-input").val();
 	parse_adjust(input_text);
-
 });

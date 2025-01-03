@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="./assets/stylesheets/bootstrap.css">
 	<link rel="stylesheet" href="./assets/stylesheets/home.css">
 	<script src="./assets/javascripts/jquery-3.7.1.min.js"></script>
+	<script src="./assets/javascripts/bootstrap.js"></script>
 	<script src="./assets/javascripts/application.js"></script>
 </head>
 
@@ -22,8 +23,24 @@
 
 	<div class='parent'>
 		<br />
-		<legend>
-			Keyboard Input
+		<legend style="display: flex; justify-content: space-between;">
+			<div>Keyboard Input</div>
+			<div class="btn-group">
+				<a class="btn dropdown-toggle" data-toggle="dropdown" style="margin-bottom: 8px;">
+					Sample Text (UDHR #1)
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+					<li><a data-language="zh" class="language-btn" tabindex="-1" href="#">Chinese</a></li>
+					<li><a data-language="en" class="language-btn" tabindex="-1" href="#">English</a></li>
+					<li><a data-language="el" class="language-btn" tabindex="-1" href="#">Greek</a></li>
+					<li><a data-language="id" class="language-btn" tabindex="-1" href="#">Indonesian</a></li>
+					<li><a data-language="ru" class="language-btn" tabindex="-1" href="#">Russian</a></li>
+					<li><a data-language="es" class="language-btn" tabindex="-1" href="#">Spanish</a></li>
+					<li><a data-language="sw" class="language-btn" tabindex="-1" href="#">Swahili</a></li>
+					<li><a data-language="tr" class="language-btn" tabindex="-1" href="#">Turkish</a></li>
+				</ul>
+			</div>
 		</legend>
 		<div class='center'>
 			<textarea class='textarea-home' id='key-input' rows="5"></textarea>
@@ -162,7 +179,7 @@
 					<a data-value='O' target='_blank' class='btn keyboard-btn'>
 						<img class="keyboard-img" src="assets/images/keyboard/oo.png"><span
 							class="keyboard-label">O</span>
-					</a>	
+					</a>
 				</div>
 				<div class="btn-group">
 					<a data-value='3' target='_blank' class='btn keyboard-btn'>
