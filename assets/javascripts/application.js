@@ -612,27 +612,35 @@ $(document).ready(function () {
 		font_size = parseInt($(this).val());
 		font_width_abs = get_font_width_abs(font_width, font_size);;
 		var input_text = $("#key-input").val();
-		parse_adjust(input_text, min_height);
+		parse_adjust(input_text);
 	});
 
 	$("#font-width").change(function () {
 		font_width = parseInt($(this).val());
 		font_width_abs = get_font_width_abs(font_width, font_size);;
 		var input_text = $("#key-input").val();
-		parse_adjust(input_text, min_height);
+		parse_adjust(input_text);
 	});
 
 	$("#font-color").change(function () {
 		font_color = $(this).val();
 		var input_text = $("#key-input").val();
-		parse_adjust(input_text, min_height);
+		parse_adjust(input_text);
 	});
 
 	// Textarea input listens to keypress events.
 	$("#key-input").keyup(function () {
 		var input_text = $(this).val();
-		parse_adjust(input_text, min_height);
+		parse_adjust(input_text);
 	});
+
+	 // Handle paste event
+	$("#key-input").bind("paste", function(e) {
+		var _this = $(this);
+		setTimeout(function() {
+			parse_adjust(_this.val());
+		});
+	} );
 
 	$("#save_button").click(function () {
 		var short_text = text_height < min_height || num_lines < 2;
